@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class FooterWidget extends StatelessWidget {
-  const FooterWidget({
-    super.key,
-  });
+  const FooterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    return footer();
+  }
+
+  Widget footer() {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
       // height: 400,
@@ -60,17 +62,9 @@ class FooterWidget extends StatelessWidget {
                     SizedBox(height: 10),
                     Row(
                       children: [
-                        Icon(
-                          Bootstrap.twitter,
-                          color: Colors.blue,
-                          size: 20,
-                        ),
+                        Icon(Bootstrap.twitter, color: Colors.blue, size: 20),
                         SizedBox(width: 10),
-                        Icon(
-                          Bootstrap.facebook,
-                          size: 20,
-                          color: Colors.white,
-                        ),
+                        Icon(Bootstrap.facebook, size: 20, color: Colors.white),
                         SizedBox(width: 10),
                         Icon(
                           Bootstrap.instagram,
